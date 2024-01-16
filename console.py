@@ -182,7 +182,7 @@ class HBNBCommand(cmd.Cmd):
             return False
         if len(argl) == 3:
             try:
-                type(eval(argl[2])) != dict
+                type(eval(argl[2])) == dict
             except NameError:
                 print("** value missing **")
                 return False
